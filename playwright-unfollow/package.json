@@ -1,0 +1,11 @@
+{
+  "name": "ig-playwright-unfollow",
+  "private": true,
+  "scripts": {
+    "install": "playwright install chromium",
+    "start": "node unfollow.js"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}

@@ -1,0 +1,5 @@
+# This file ensures the data directory is tracked by git
+# Place your IG export files here:
+# - followers_1.json
+# - following.json
+

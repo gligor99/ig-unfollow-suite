@@ -1,0 +1,33 @@
+# Personal data files - DO NOT COMMIT
+not_following_back.json
+not_following_back.txt
+data/followers_1.json
+data/following.json
+
+# Node modules
+node_modules/
+playwright-unfollow/node_modules/
+
+# Package locks (optional - some prefer to commit these)
+# package-lock.json
+# playwright-unfollow/package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+
