@@ -31,3 +31,10 @@ npm-debug.log*
 .env
 .env.local
 
+
+# Remove-followers personal data
+not_following.json
+not_following.txt
+removed_followers.txt
+following-names.json
+data/keep.txt

@@ -136,6 +136,35 @@ npm start
 
 **⚠️ IMPORTANT:** The default limit of 120 is **extremely risky**. Start with 5-10 unfollows to test, then gradually increase. Never exceed 30 per day.
 
+## 🧹 Part 2: Remove Followers
+
+Remove people who follow you but you don't want as followers.
+
+### Step 1: Build the remove list
+
+```bash
+node find-not-following.js
+```
+
+- By default, keeps followers you follow back (`data/following.json`) and lists the rest.
+- To keep **only** a specific set of people, create `data/keep.txt` (one username per line, `@` and profile URLs are fine). Every follower not on that list gets removed.
+
+Creates `not_following.txt` / `not_following.json`.
+
+### Step 2: Remove them
+
+```bash
+cd playwright-unfollow
+npm run remove -- <your_instagram_username>
+```
+
+The script logs in manually, opens your followers dialog, searches each user, clicks **Remove** and confirms.
+
+- Default limit: 25 per run, 20–35 s random delay
+- Stops immediately on "Try again later" / action blocked, or after 5 failures in a row
+- Users no longer in your followers are dropped from the list
+- Progress is saved; everything done is logged to `removed_followers.txt`
+
 ## ⚙️ Configuration
 
 ### Change the Unfollow Limit

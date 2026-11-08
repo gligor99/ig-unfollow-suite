@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "install": "playwright install chromium",
-    "start": "node unfollow.js"
+    "start": "node unfollow.js",
+    "remove": "node remove-followers.js"
   },
   "dependencies": {
     "playwright": "^1.49.0"
